@@ -851,6 +851,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7009679450807445894, guid: 19abb0ada3bf3174ca57eef558db75da, type: 3}
+--- !u!114 &165455760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165455752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bf4594d856624d4cb8cc57cc51c0fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDropped: 0
+  rotateX: 90
+  rotateY: 0
+  rotateZ: 0
 --- !u!1 &209696582 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -693520538672552467, guid: 19abb0ada3bf3174ca57eef558db75da,
@@ -1867,6 +1883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 585596426}
   - component: {fileID: 585596427}
+  - component: {fileID: 585596428}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -1947,6 +1964,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &585596428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585596425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25a0c38e44333d4082de492df90e416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &606814542
 GameObject:
   m_ObjectHideFlags: 0
@@ -2308,6 +2337,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 165455758}
+    - targetCorrespondingSourceObject: {fileID: 7385344210579096074, guid: 19abb0ada3bf3174ca57eef558db75da,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 165455760}
     - targetCorrespondingSourceObject: {fileID: -5389093529319367387, guid: 19abb0ada3bf3174ca57eef558db75da,
         type: 3}
       insertIndex: -1
