@@ -9,7 +9,7 @@ public class RotatingComponent : TurbinaComponent
 	private RotatingSpeedSlider slider;
 
 	public float rotateX = 1;
-	public float rotateY = 1;
+	public float rotateY = 90;
 	public float rotateZ = 1;
  
 	protected override void Start() {
@@ -20,7 +20,7 @@ public class RotatingComponent : TurbinaComponent
 
 	public void Update() {
 		if (!isDropped)
-			ts.Rotate(new Vector3(rotateX * Time.deltaTime * slider.GetValue(), rotateY * Time.deltaTime * slider.GetValue(), rotateZ * Time.deltaTime * slider.GetValue()));
+			ts.Rotate(new Vector3(rotateX * Time.deltaTime * slider.GetValue(), rotateY * Time.deltaTime * slider.GetValue() * 10, rotateZ * Time.deltaTime * slider.GetValue()));
 	}
 
 	private void OnDrop() {
