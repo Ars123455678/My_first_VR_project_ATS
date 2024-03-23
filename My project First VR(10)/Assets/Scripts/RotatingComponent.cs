@@ -8,9 +8,9 @@ public class RotatingComponent : TurbinaComponent
 	private Transform ts;
 	private RotatingSpeedSlider slider;
 
-	public float rotateX = 1;
-	public float rotateY = 90;
-	public float rotateZ = 1;
+	public float rotateX = -5000;
+	public float rotateY = 0;
+	public float rotateZ = 0;
  
 	protected override void Start() {
 		base.Start();
