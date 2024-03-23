@@ -302,6 +302,6 @@ MonoBehaviour:
   componentName: 
   text: {fileID: 0}
   isDropped: 0
-  moveX: -1
+  moveX: -10
   moveY: 0
   moveZ: 0
