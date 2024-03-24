@@ -16,4 +16,7 @@ public class Optionschoos : TurbinaComponent
 	public void ThirdRoom() {
 		prefab.transform.position = new Vector3(3, 1, 28);
 	}
+	public void BackHome() {
+		prefab.transform.position = new Vector3(9, 1, 4);
+	}
 }
