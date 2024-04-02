@@ -6,11 +6,11 @@ public class SoundPrefab : MonoBehaviour
 {
     [SerializeField] private AudioSource sound;
     [SerializeField] private float volumeFactor = 1;
-    [SerializeField] private float lifeTime = 3f;
+    [SerializeField] private float lifeTime = 1f;
 
     public void Play(float volume)
     { 
-        sound.pitch = Random.Range(0.9f, 1.1f);
+        sound.pitch = Random.Range(1f, 1f);
         sound.volume *= volume * volumeFactor;
     }
 
