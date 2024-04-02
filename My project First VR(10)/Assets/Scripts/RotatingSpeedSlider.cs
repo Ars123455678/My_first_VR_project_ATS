@@ -7,7 +7,7 @@ public class RotatingSpeedSlider : MonoBehaviour
 {
 	public static RotatingSpeedSlider st; 
 
-	private Slider slider;
+	public Slider slider;
 
 	public void Awake() {
 		st = this;
