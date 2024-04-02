@@ -7,12 +7,14 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class InformationComponent : MonoBehaviour
 {
     private GameObject textGo;
-    private XRSimpleInteractable interactable;
+    private XRSimpleInteractable interactable;         
+    
+    public string componentName;
 
     private void Start()
     {
         textGo = transform.GetChild(0).gameObject;
-        interactable = GetComponent<XRSimpleInteractable>();
+        interactable = GetComponent<XRSimpleInteractable>();                    
         HideText(null);
         interactable.hoverEntered.AddListener(ShowText);
         interactable.hoverExited.AddListener(HideText); 
