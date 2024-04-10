@@ -8,6 +8,7 @@ public class TRDSeparationContorller : MonoBehaviour
     public float setDistance = 5;
 
     private Dictionary<Transform, Vector3> positionsMap = new Dictionary<Transform, Vector3>();
+    private Dictionary<Transform, Quaternion> rotationsMap = new Dictionary<Transform, Quaternion>();
 
     private void Start()
     {
@@ -15,6 +16,7 @@ public class TRDSeparationContorller : MonoBehaviour
         foreach (Transform ts in myts)
         {
             positionsMap.Add(ts, ts.position);
+            rotationsMap.Add(ts, ts.rotation);
             ts.GetComponent<XRGrabInteractable>().selectExited.AddListener(OnSelectExited);
         }
     }
@@ -25,6 +27,7 @@ public class TRDSeparationContorller : MonoBehaviour
         if (Vector3.Distance(ts.position, transform.position) < setDistance)
         { 
             ts.position = positionsMap[ts];
+            ts.rotation = rotationsMap[ts];
         }
     }
 }
