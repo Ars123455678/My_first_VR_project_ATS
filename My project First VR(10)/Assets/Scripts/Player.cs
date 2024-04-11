@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Player : MonoBehaviour
 {
 	public static Player st;
 
-	[HideInInspector] public Transform ts;
+	public Transform ts;
+	public XRGrabInteractable xrGrabInteractable;
 
 	public void Awake() {
 		st = this;
