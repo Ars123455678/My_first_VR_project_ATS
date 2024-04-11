@@ -53400,6 +53400,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1589353790}
+    - targetCorrespondingSourceObject: {fileID: 8565626823841723070, guid: 754c642696b186f4b9df5f9c6af5c297,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1589353792}
     - targetCorrespondingSourceObject: {fileID: -5076517175753613940, guid: 754c642696b186f4b9df5f9c6af5c297,
         type: 3}
       insertIndex: -1
@@ -69552,7 +69556,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -69593,6 +69597,19 @@ MonoBehaviour:
   soundPrefab: {fileID: 616732237316613083, guid: 4739a56655e9e73428d15c06b6c30e9a,
     type: 3}
   volumeFactor: 10
+--- !u!114 &1589353792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589353784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2cf7e0a25c0047499a4a729d4aa2e7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setDistance: 0.01
 --- !u!1 &1590367827 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6511830075542387389, guid: 38f7584d4eea92c468552da97048489b,

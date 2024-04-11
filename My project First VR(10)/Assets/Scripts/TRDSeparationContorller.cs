@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit;         
 
 public class TRDSeparationContorller : MonoBehaviour
 {
@@ -28,6 +28,7 @@ public class TRDSeparationContorller : MonoBehaviour
         { 
             ts.position = positionsMap[ts];
             ts.rotation = rotationsMap[ts];
+            ts.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
 }
