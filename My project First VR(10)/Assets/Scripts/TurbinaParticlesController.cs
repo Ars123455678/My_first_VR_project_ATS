@@ -8,12 +8,21 @@ public class TurbinaParticlesController : MonoBehaviour
 
     public GameObject particles;
     public GameObject fireParticles;
+    public GameObject airParticles;
 
     public void OnFuelButtonClicked()
     {
         if (state == 0)
         {
             particles.SetActive(true);
+            state = 1;
+        }
+    }
+    public void OnAirButtonClicked()
+    {
+        if (state == 0)
+        {
+            airParticles.SetActive(true);
             state = 1;
         }
     }
@@ -34,6 +43,7 @@ public class TurbinaParticlesController : MonoBehaviour
         {
             fireParticles.SetActive(false);
             particles.SetActive(false);
+            airParticles.SetActive(false);
             state = 0;
         }
     }
