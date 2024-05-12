@@ -8,7 +8,7 @@ public class Optionschoos : TurbinaComponent
 	public GameObject prefab;
 
 	public void FirstRoom() {
-		prefab.transform.position = new Vector3(3, 1, 4);
+		prefab.transform.position = new Vector3(3, 1, 3);
 	}
 	public void SecondRoom() {
 		prefab.transform.position = new Vector3(3, 1, 16);

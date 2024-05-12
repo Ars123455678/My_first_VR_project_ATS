@@ -12,7 +12,7 @@ public class TurbinaParticlesController : MonoBehaviour
 
     public void OnFuelButtonClicked()
     {
-        if (state == 0)
+        if (state == 0 || state == 1)
         {
             particles.SetActive(true);
             state = 1;
@@ -20,7 +20,7 @@ public class TurbinaParticlesController : MonoBehaviour
     }
     public void OnAirButtonClicked()
     {
-        if (state == 0)
+        if (state == 0 || state == 1)
         {
             airParticles.SetActive(true);
             state = 1;
