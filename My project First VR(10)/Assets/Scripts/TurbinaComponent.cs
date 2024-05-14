@@ -1,20 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;		   
-using UnityEngine.UI;
-using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.UI; 
 
 public class TurbinaComponent : MonoBehaviour
 {
 	public string componentName;
 	public Text text;		  
 
-	public bool isDropped;
-	protected XRGrabInteractable grab;
+	public bool isDropped; 
 	
 
-	protected virtual void Start() {
-		grab = GetComponent<XRGrabInteractable>();
+	protected virtual void Start() { 
 	}
 
 	public void ShowName() {

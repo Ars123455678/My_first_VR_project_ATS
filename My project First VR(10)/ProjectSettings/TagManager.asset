@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - Ignore
-  - 
-  - 
-  - 
+  - Player
+  - Wall
+  - Component
+  - TopUI
   - 
   - 
   - 

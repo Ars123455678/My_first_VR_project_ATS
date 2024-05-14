@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine; 
 
-public class Optionschoos : TurbinaComponent
+public class Optionschoos : MonoBehaviour
 {
 	public GameObject prefab;
 
 	public void FirstRoom() {
-		prefab.transform.position = new Vector3(3, 1, 3);
+		prefab.transform.position = new Vector3(3, 1, 4);
 	}
 	public void SecondRoom() {
 		prefab.transform.position = new Vector3(3, 1, 16);
