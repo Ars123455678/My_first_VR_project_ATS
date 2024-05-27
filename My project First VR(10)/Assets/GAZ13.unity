@@ -7273,7 +7273,7 @@ PrefabInstance:
     - target: {fileID: -5468102529310790740, guid: ab9b7b0cef81d0045bca0fc4fbc16008, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -3846018093981099296, guid: 2af73cd2d6291b84fa21e9f5dfe6cde3, type: 3}
+      objectReference: {fileID: -6478536213147159724, guid: 2af73cd2d6291b84fa21e9f5dfe6cde3, type: 3}
     - target: {fileID: -5327013441741549672, guid: ab9b7b0cef81d0045bca0fc4fbc16008, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -7437,7 +7437,7 @@ PrefabInstance:
     - target: {fileID: 1800549899371375869, guid: ab9b7b0cef81d0045bca0fc4fbc16008, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -3846018093981099296, guid: 2af73cd2d6291b84fa21e9f5dfe6cde3, type: 3}
+      objectReference: {fileID: -6478536213147159724, guid: 2af73cd2d6291b84fa21e9f5dfe6cde3, type: 3}
     - target: {fileID: 1842002540404336410, guid: ab9b7b0cef81d0045bca0fc4fbc16008, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -17387,9 +17387,6 @@ MonoBehaviour:
   - {fileID: 717121877}
   - {fileID: 1315553472}
   - {fileID: 1297350983}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1401428389}
   - {fileID: 1720073511}
   - {fileID: 1495779804}
