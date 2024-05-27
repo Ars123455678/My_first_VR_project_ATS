@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Transactions;
 using UnityEngine;
 
 public class PlayerComponentHolder : MonoBehaviour
@@ -23,14 +24,18 @@ public class PlayerComponentHolder : MonoBehaviour
         {
             if (currentComponent != null)
             {
-                if (!interactor.Interact<TRDSeparationContorller>())
-                {
-                    Put();
-                }
+                interactor.Interact<TRDSeparationContorller>();
             }
             else
             {
                 interactor.Interact<HoldableComponent>();
+            }
+        }
+        else if (Input.GetMouseButtonDown(1))
+        {
+            if (currentComponent != null)
+            {
+                Put();
             }
         }
     }

@@ -14,6 +14,8 @@ public class HoldableComponent : MonoBehaviour, IInteractable
 
     public int num;
 
+    public bool isSet;
+
     private void Start()
     {
         ts = transform;
@@ -22,6 +24,7 @@ public class HoldableComponent : MonoBehaviour, IInteractable
         parent = transform.parent;
         startPos = transform.position;
         rotation = transform.rotation;
+        isSet = true;
     }
 
     public void Enter(Player player)
@@ -36,7 +39,8 @@ public class HoldableComponent : MonoBehaviour, IInteractable
 
     public void Interact(Player player)
     {
-        player.componentHolder.Hold(this);
+        if (!isSet)
+            player.componentHolder.Hold(this);
     }
 
 
@@ -46,7 +50,9 @@ public class HoldableComponent : MonoBehaviour, IInteractable
         rb.useGravity = true;
         col.isTrigger = false;
 
-        ts.SetParent(null); 
+        ts.SetParent(null);
+
+        isSet = false;
     }
     public void OnSet()
     {
@@ -57,7 +63,9 @@ public class HoldableComponent : MonoBehaviour, IInteractable
         rb.useGravity = false;
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
-        col.isTrigger = true; 
+        col.isTrigger = true;
+
+        isSet = true;
     }
     public void OnHold(PlayerComponentHolder player)
     {

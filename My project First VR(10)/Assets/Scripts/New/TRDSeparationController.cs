@@ -36,6 +36,7 @@ public class TRDSeparationContorller : MonoBehaviour, IInteractable
 
     public void Disassemble()
     {
+        pointer = 0;
         foreach (var component in allComponents)
         {
             component.OnPut();
